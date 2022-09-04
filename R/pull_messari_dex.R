@@ -1,6 +1,6 @@
 # Pull data from Messari subgraphs - DEX AMM
 
-pull_dex = function(api_key='d15aa0f9f570a7be9dce4412b547e67f', exchange='sushiswap-ethereum', entity='usageMetricsDailySnapshots', first=1000, visualize=FALSE, visualize_col='dailyTransactionCount'){
+pull_messari_dex = function(api_key='d15aa0f9f570a7be9dce4412b547e67f', exchange='sushiswap-ethereum', entity='usageMetricsDailySnapshots', first=1000, visualize=FALSE, visualize_col='dailyTransactionCount'){
   if(exchange == 'sushiswap-ethereum'){
     subgraph_url = paste0("https://gateway.thegraph.com/api/",api_key,"/subgraphs/id/7h1x51fyT5KigAhXd8sdE3kzzxQDJxxz1y66LTFiC3mS")
   }
