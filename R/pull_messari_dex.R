@@ -1,4 +1,5 @@
 # Pull data from Messari subgraphs - DEX AMM
+# Notes: so far only covered usageMetricsDailySnapshots entity
 
 pull_messari_dex = function(api_key='d15aa0f9f570a7be9dce4412b547e67f', exchange='sushiswap-ethereum', entity='usageMetricsDailySnapshots', first=1000, visualize=FALSE, visualize_col='dailyTransactionCount'){
   if(exchange == 'sushiswap-ethereum'){
